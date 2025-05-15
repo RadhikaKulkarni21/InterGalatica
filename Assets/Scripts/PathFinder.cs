@@ -6,12 +6,18 @@ using UnityEngine;
 //Once reaches the last point, destroys itslef
 public class PathFinder : MonoBehaviour
 {
-    [SerializeField] WaveConfigSO waveConfig;
+    EnemySpawner enemySpawner;
+    WaveConfigSO waveConfig;
     List<Transform> waypoints;
     int waypointIndex = 0;
 
+    private void Awake()
+    {
+        enemySpawner = FindAnyObjectByType<EnemySpawner>();
+    }
     void Start()
     {
+        waveConfig = enemySpawner.GetCurrentWave();
         waypoints = waveConfig.GetWayPoints();
         transform.position = waypoints[waypointIndex].position; //changing the location of enemy ship from point to point
     }
