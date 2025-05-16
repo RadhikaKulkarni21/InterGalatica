@@ -432,13 +432,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2199666368225136848, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
+      propertyPath: isFiring
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2199666368225136848, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
+      propertyPath: projectilePrefab
+      value: 
+      objectReference: {fileID: 6858116472088171566, guid: c22861ecda1485d49b22d9d155cd2db8, type: 3}
     - target: {fileID: 991339777093744226, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 991339777093744226, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 991339777093744226, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
       propertyPath: m_LocalPosition.z
