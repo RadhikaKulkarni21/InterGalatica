@@ -9,13 +9,17 @@ public class Shooter : MonoBehaviour
     [SerializeField] float projectileSpeed = 10f;
     [SerializeField] float projectileLifeTime = 5f;
     [SerializeField] float firingRate = 0.2f;
+    [SerializeField] bool useAI;
 
     public bool isFiring;
 
     Coroutine firingCoroutine;
     void Start()
     {
-        
+        if (useAI)
+        {
+            isFiring = true;
+        }
     }
 
     void Update()
