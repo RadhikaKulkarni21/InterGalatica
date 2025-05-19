@@ -54,7 +54,7 @@ public class Player : MonoBehaviour
     }
 
     //player shooting
-    //OnFire is depricated, move to OnFire
+    //OnFire is depricated, move to OnAttack
     void OnAttack(InputValue value)
     {
         if (shooter != null)
