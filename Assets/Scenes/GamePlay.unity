@@ -166,7 +166,9 @@ MonoBehaviour:
   waveConfigs:
   - {fileID: 11400000, guid: fe38224c6a92d784eb824900b3c23559, type: 2}
   - {fileID: 11400000, guid: 5a007aad8e13e5049a6c4950fac546d1, type: 2}
-  timeBetweenWaves: 0
+  - {fileID: 11400000, guid: 7f4a2190330d16d48bb9385d82500960, type: 2}
+  - {fileID: 11400000, guid: db9feb3d7b80141439120c73e004817d, type: 2}
+  timeBetweenWaves: 2
   isLooping: 1
 --- !u!1001 &123882437
 PrefabInstance:
@@ -1260,6 +1262,10 @@ PrefabInstance:
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 6858116472088171566, guid: c22861ecda1485d49b22d9d155cd2db8, type: 3}
+    - target: {fileID: -2199666368225136848, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
+      propertyPath: firingRateVariance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 991339777093744226, guid: e4d325848edeb1f40a166eb268109dfa, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
